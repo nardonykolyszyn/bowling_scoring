@@ -1,4 +1,4 @@
-# Packen Test
+# Bowling scoring calculator
 
 ----
 
