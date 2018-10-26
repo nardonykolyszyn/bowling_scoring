@@ -1,0 +1,112 @@
+{
+  "player": {
+    "name": "Nardo Nykolyszyn",
+    "alias": "devpolish",
+    "frames": { 
+      "frame_1": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_2": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_3": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_4": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_5": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_6": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_7": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_8": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_9": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_10": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_11": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_12": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_13": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_14": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_15": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_16": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_17": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_18": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_19": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_20": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      },
+
+      "frame_21": {
+        "attempt_1": 6,
+        "attempt_2": 3
+      }
+    }
+  }
+}
