@@ -3,7 +3,7 @@
 Ruby VM is not good at all, when Matsumoto wrote it, he said that wasn't his best work from then has been getting better a significant amount. However, Strings object depending on the case could mean a huge problem if are called many times in critical operations, such as requesting resources to an external API. Let's say we have a small client which connect to Last.fm to get latest top 100 songs. We should have a base client which will set up our client either with a fancy and strong gem like Faraday or with HTTP Ruby object, we have next line:
 
 ```json
-{'content-type': 'application/json'}
+{"content-type": "application/json"}
 ```
 
 Every request by our users will perform that method which will create two new instances on our server it does mean we are going to occupy all our memory with useless objects and pointers. From next Ruby version (2.6) the Ruby Core will implement by default every String as frozen objects, that means if we have already created those strings in our server Ruby interpreter will still pointing them. The only temporal solution we have now is putting on the top of every Ruby file next "magic comment"
@@ -20,9 +20,9 @@ Now, let's say we need to perform an HTTP/POST action to Last.fm, we have follow
 
 ```json
 {
-  'user': {
-    'alias': @user.alias_name,
-    'country': @user.country
+  "user": {
+    "alias": "devpolish",
+    "country": "Poland"
   }
 }
 ```
