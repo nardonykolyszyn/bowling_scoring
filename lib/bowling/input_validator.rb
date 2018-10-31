@@ -19,6 +19,6 @@ module InputValidator
   end
 
   def self.extract_special_characters_validation(input)
-    raise ArgumentError, 'Please check your data' if input.split(/\d+/).delete_if(&:empty?).size > 10
+    raise ArgumentError, 'Please check your data' if input.split(/\d+/).delete_if(&:empty?).size > 11
   end
 end
