@@ -27,7 +27,8 @@
 ```bash
   rspec specs/
 ```
------
+
+----
 
 ## Usage
 
@@ -36,3 +37,9 @@ Check data's folder to see valid values accepted. i.e
 ```bash
   ruby scoring.rb --pattern XXXXXXXXXXXX
 ```
+
+----
+
+## Automated Code reviews
+
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
