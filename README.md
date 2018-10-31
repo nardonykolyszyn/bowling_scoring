@@ -2,14 +2,6 @@
 
 ----
 
-## Content
-
-* lib  
-  * Active Support
-    * Deep Symbolize Keys
-* bin
-* test
-
 ## Assumptions
 
 * Each bowling game has 10 frames, with the last frame being a bonus frame consisting of up to 3 bowls
@@ -20,10 +12,27 @@
 
 * The solution was designed for use as a CLI which receives arguments  
 
-## Models
+## Architectures
+
+![alt text](./images/architecture.png "Logo Title Text 1")
 
 ----
 
-### Bonus Frame
+## Bonus
 
   > Represents possible extra frame composed by one or two tries if bowler score a spare or strik respectively in his last normal try.
+
+## Testing
+
+```bash
+  rspec specs/
+```
+-----
+
+## Usage
+
+Check data's folder to see valid values accepted. i.e
+
+```bash
+  ruby scoring.rb --pattern XXXXXXXXXXXX
+```
