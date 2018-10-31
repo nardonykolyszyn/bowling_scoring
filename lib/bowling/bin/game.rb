@@ -6,7 +6,7 @@ require_relative '../base/score_board_model'
 
 module Bowling
   class Game
-    def start(rolls)
+    def initialize(rolls)
       @frames = FrameModel.new(
         bowls: InputValidator.get_values(rolls),
         remaining_pins: MAX_PINS
