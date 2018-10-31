@@ -49,6 +49,6 @@ PS: Even if Symbols are more like
   :user => { :alias => @user.alias_name, :country => @user.country }
 ```
 
-Rubocop's style guide stongly recommend the first way.
+Robocop's style guide strongly recommends the first way.
 
 Even, in this small project, we need to follow all style guides and good practices. It's not enough that it just works, it's about good practices, strong and scalable architectures.
