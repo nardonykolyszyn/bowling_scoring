@@ -5,7 +5,6 @@ module Bowling
     attr_reader :attrs
 
     def initialize(attrs = {})
-      puts attrs
       return if attrs.nil? || attrs.empty?
 
       attrs.each do |key, value|
