@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
+require_relative '../active_support/deep_symbolize_keys'
+
 module Bowling
+  using SymbolizeHelper
   class ScoreBoardModel < Base
     attr_accessor :score, :bowls
 
@@ -9,7 +12,7 @@ module Bowling
         score: score.inject(:+),
         rolls: rolls,
         pairs: pairs.size
-      }
+      }.deep_symbolize_keys
     end
 
     def pairs
