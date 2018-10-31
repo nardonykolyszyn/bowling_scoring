@@ -25,6 +25,7 @@ DEPENDENCIES
   byebug
   colorize
   rspec
+  rspec-expectations
 
 RUBY VERSION
    ruby 2.5.1p57
