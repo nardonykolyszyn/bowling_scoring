@@ -6,7 +6,11 @@ require_relative '../base/score_board_model'
 
 module Bowling
   class Game
+    attr_reader :frames, :score
+
     def initialize(rolls)
+      raise ArgumentError if rolls.nil?
+
       @frames = FrameModel.new(
         bowls: InputValidator.get_values(rolls),
         remaining_pins: MAX_PINS
@@ -19,7 +23,6 @@ module Bowling
         score: @score,
         bowls: @frames.bowls
       )
-      @score_board.total_score
     end
 
     def sum_frame(frame)
@@ -69,6 +72,10 @@ module Bowling
           @score.push score_gutter(frame)
         end
       end
+    end
+
+    def final_score
+      @score_board.total_score
     end
   end
 end
