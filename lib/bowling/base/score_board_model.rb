@@ -1,16 +1,15 @@
 # frozen_string_literal: true
 
-require 'pp'
-require 'colorize'
-
 module Bowling
   class ScoreBoardModel < Base
     attr_accessor :score, :bowls
 
     def total_score
-      puts "Score #{score.inject(:+)}".green
-      puts "Rolls #{rolls}".yellow
-      puts "Pairs #{pairs.size}".red
+      {
+        score: score.inject(:+),
+        rolls: rolls,
+        pairs: pairs.size
+      }
     end
 
     def pairs
@@ -18,7 +17,7 @@ module Bowling
     end
 
     def rolls
-      bowls.join('').length
+      bowls.length
     end
   end
 end
