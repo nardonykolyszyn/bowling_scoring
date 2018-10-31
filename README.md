@@ -18,4 +18,12 @@
 
 * The scoreboard can be printed onto the screen at any time, even before the game has ended
 
-* The solution was designed for use as a CLI which receives arguments
+* The solution was designed for use as a CLI which receives arguments  
+
+## Models
+
+----
+
+### Bonus Frame
+
+  > Represents possible extra frame composed by one or two tries if bowler score a spare or strik respectively in his last normal try.
