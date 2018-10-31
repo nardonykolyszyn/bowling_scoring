@@ -4,12 +4,11 @@ require 'optparse'
 
 OPTIONS = {}
 
-parser = OptionParser.new do |ps|
-  ps.banner = 'Usage: ruby scoring.rb --help'
+OptionParser.new do |opts|
+  usage = 'ruby scoring.rb -p XXXXXXXXXXXX'
+  opts.banner = 'Usage: example.rb [options]'
 
-  ps.on('-', '--data-input', 'Data location') do |input|
-    OPTIONS[:input] = input
+  opts.on('-p pattern', '--pattern=pattern', 'Pattern which you wish to scan', usage) do |p|
+    OPTIONS[:pattern] = p
   end
-end
-
-parser.parse!
+end.parse!
